@@ -3,11 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "concurrently \"vue-cli-service serve\" \"nodemon ./server/index.js\"",
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "vue": "^2.6.6"
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "http": "^0.0.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.24.0",
+    "popper.js": "^1.14.7",
+    "socket.io": "^2.2.0",
+    "vue": "^2.6.6",
+    "vue-socket.io": "^3.0.5",
+    "vue-splitpane": "^1.0.2",
+    "vue-webrtc": "^1.0.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
